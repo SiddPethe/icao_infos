@@ -5,10 +5,11 @@ def search_icao(icao_code):
     # return ['DE','Stutgart']
 
     result = []
-    df = pd.read_csv('iata-icao.csv')
+    df = pd.read_csv('airports.csv')
     for index,row in df.iterrows():
-        if row["icao"] == icao_code:
-            result.append(row["country_code"])
-            result.append(row["airport"])
+        if row["icao_code"] == icao_code:
+            result.append(row["iso_country"])
+            result.append(row["municipality"])
+            result.append(row["name"])
 
     return result

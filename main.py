@@ -17,7 +17,8 @@ def get_icao(event):
             airport_label.config(text='Airport not found')
         else:
             country_label.config(text=result[0])
-            airport_label.config(text=result[1])
+            city_label.config(text=result[1])
+            airport_label.config(text=result[2])
 
 main = Tk()
 
@@ -46,6 +47,10 @@ main.bind("<Return>", get_icao)
 country_label = Label(main, text='',bg='#d3d3d3')
 country_label.pack(pady=(10,10))
 country_label.config(font=('verdana', 20))
+
+city_label = Label(main, text='',bg='#d3d3d3')
+city_label.pack(pady=(10,10))
+city_label.config(font=('verdana', 20))
 
 airport_label = Label(main, text='',bg='#d3d3d3')
 airport_label.pack(pady=(10,10))

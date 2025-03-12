@@ -11,7 +11,7 @@
 - Create a shortcut of the autostart.bat in the desired folder. 
 - This shortcut is used to start the app without creating a .exe file.
 
-This site or product includes IATA/ICAO List data available from http://www.ip2location.com.
+This site or product includes IATA/ICAO List data available from https://ourairports.com/data/.
 
 IATA is a registered trademark of International Air Transport Association.
 ICAO is a registered trademark of International Civil Aviation Organization.
